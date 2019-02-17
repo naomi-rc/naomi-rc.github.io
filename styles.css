@@ -30,9 +30,10 @@ body {
 	color: white;
 }
 
-.nav li a:link, a:active, a:visited {
+.nav li a:link, .nav li a:active, .nav li a:visited {
 	text-decoration: none;
 	color: white;
+	font-weight: bold;
 }
 .nav li a {	
 	color: inherit;
@@ -44,16 +45,14 @@ body {
 }
 
 #header_image {
-	height: 300px;
-	background: url("images/header_image2.jpg");
-
-	
+	height: 200px;
+	background: url("images/header_image2.jpg");	
 }
 #main_heading {
 	position: relative;
-	font-weight: bold;
+	font-weight: 600;
 	color: black;
-	top: 130px;
+	top: 40%;
 	left: 43%;
 	z-index: 2;
 }
@@ -95,4 +94,24 @@ footer {
 .card {
 	float: left;
 	margin: 2%;
+}
+
+#intro p {
+	line-height: 130%;
+}
+#intro a {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;/*#0c88c2;*/
+}
+
+#intro a:hover {
+	font-weight: bolder;
+
+	color: #0c88c2;
+}
+
+.highlight {
+	background-color: yellow;
+	padding: 2px;
 }
