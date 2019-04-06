@@ -117,8 +117,57 @@ footer {
 }
 
 
-/* Modal styles */
+/* Modal Styles */
 #modal {
+	z-index: 4;
+    left: 0;
+    padding-right: 10%;
+    position: fixed;
+    width: 100%;
+    height: 105%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+
+#modal .gallery-control {
+	height: 100%;
+	background-color: rgba(0,0,0,1);
+	width: 4%;
+}
+
+#modal #prevImage {
+	float: left;
+}
+
+
+#modal #nextImage {
+	position: absolute;
+	right: 0px;
+}
+
+
+#modal #modal-image {
+	    top: 20%;
+    left: 25%;
+    position: fixed;
+    max-width: 50%;
+    max-height: 63%;
+}
+
+#modal .close {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 50px !important;
+	z-index: 5;
+
+	margin-right: 10px;
+	opacity: 0.5 !important;
+	color: white;
+}
+
+/* Modal styles */
+/*#modal {
 	background-color: rgba(132, 130, 130, .9);
     width: 100%;
     height: 100%;
@@ -142,4 +191,4 @@ footer {
   max-width: 1000px;
   position: relative;
   margin: auto;
-}
+}*/
