@@ -2,10 +2,10 @@ var headings = ["Twenty-One", "Hangman", "Test"];
 var images = ["images/twenty-one.png", "images/hangman.png"];
 var dates = ["January 2019", "January 2018"];
 var contents = ["A web-based version of the card game, Twenty One. Play against three computer-players and see if you can win.",
-				"A web-based version of Hangman.",
+				"A web-based version of Hangman. Sound effects and music play in the background.",
 				"https://naomi-rc.github.io/hangman/"
 				];
-var links = ["https://naomi-rc.github.io/twenty-one/", "https://naomi-rc.github.io/hangman/"];
+var links = ["https://naomi-rc.github.io/twenty-one/", "https://naomi-rc.github.io/hangman/", ""];
 
 
 /**
@@ -17,16 +17,34 @@ const init = function init(){
 		var title = elementHelper("h5", {"class":"card-title"}, headings[index]);
 		var date = elementHelper("small", {}, dates[index]);
 		var content = elementHelper("p", {"class":"card-text"}, contents[index]);
-		var link = elementHelper("a", {"href":links[index], "target":"blank", "class":"btn btn-primary"}, "View "+headings[index]);
+		var link;
+		if(links[index] != ""){
+			link = elementHelper("a", {"href":links[index], "target":"blank", "class":"btn btn-primary"}, "View "+headings[index]);
+		}
+		else{
+			link = elementHelper("a", {"src":"images/hangman.png", "class":"btn btn-primary open-gallery"}, "View "+headings[index]);
+		}
 
 		var cardBody = elementHelper("div", {"class":"card-body"}, "", [title, date, content, link]);
-		var img = elementHelper("img", {"class":"card-img-top", "src":images[index], "alt":headings[index]});
+		var img = elementHelper("img", {"class":"card-img-top open-gallery", "src":images[index], "alt":headings[index]});
 
 		var cardDiv = elementHelper("div", {"class":"card", "style":"width: 18rem;"}, "", [img, cardBody]);
 
 
 		contentDiv.appendChild(cardDiv);
 	}
+
+	$('.open-gallery').click(function(){
+		var path = $(this).attr('src');
+		$('#modal-image').attr('src', path);
+
+		var modal = $('#modal');
+		modal.show();
+
+		$('.close').click(function(){
+			modal.hide();
+		});
+	});
 }
 
 
@@ -63,7 +81,7 @@ const elementHelper = function elementHelper(elementName = "", attributes={}, te
 /**
 * Displays modal gallery for projects with images instead of project links
 */
-$(function()
+/*$(function()
 {
 	$('.open-gallery').click(function(){
 		var path = $(this).attr('src');
@@ -76,7 +94,7 @@ $(function()
 			modal.hide();
 		});
 	});
-});
+});*/
 /*$(function()
 {
 	$('.open-gallery').click(function(){
