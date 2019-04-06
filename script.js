@@ -1,15 +1,18 @@
-var headings = ["Twenty-One", "Hangman"];
+var headings = ["Twenty-One", "Hangman", "Test"];
 var images = ["images/twenty-one.png", "images/hangman.png"];
 var dates = ["January 2019", "January 2018"];
 var contents = ["A web-based version of the card game, Twenty One. Play against three computer-players and see if you can win.",
 				"A web-based version of Hangman.",
 				"https://naomi-rc.github.io/hangman/"
 				];
-var links = ["https://naomi-rc.github.io/twenty-one/"];
+var links = ["https://naomi-rc.github.io/twenty-one/", "https://naomi-rc.github.io/hangman/"];
 
+
+/**
+* Initializes and displays all project information
+*/
 const init = function init(){
-
-var contentDiv = document.getElementById("contentDiv");
+	var contentDiv = document.getElementById("contentDiv");
 	for(var index = 0; index < headings.length; index++){
 		var title = elementHelper("h5", {"class":"card-title"}, headings[index]);
 		var date = elementHelper("small", {}, dates[index]);
@@ -27,7 +30,9 @@ var contentDiv = document.getElementById("contentDiv");
 }
 
 
-
+/**
+* Constructs HTML element with all its content and details
+*/
 const elementHelper = function elementHelper(elementName = "", attributes={}, text="", childElements = []){
 	if(elementName.length != 0){
 		var element = document.createElement(elementName);
@@ -54,3 +59,22 @@ const elementHelper = function elementHelper(elementName = "", attributes={}, te
 }
 
 
+//if link is null add eventlistener to open modal to button instead of adding link to src
+/**
+* Displays modal gallery for projects with images instead of project links
+*/
+/*$(function()
+{
+	$('.open-gallery').click(function(){
+		var path = $(this).attr('src');
+		$('#modal-image').attr('src', path);
+
+		var modal = $('#modal');
+		modal.show();
+
+		$('.close').click(function(){
+			modal.hide();
+		});
+	});
+});
+*/
