@@ -94,6 +94,7 @@ footer {
 .card {
 	float: left;
 	margin: 2%;
+	min-height: 412px;
 }
 
 #intro p {
@@ -130,29 +131,13 @@ footer {
     display: none;
 }
 
-#modal .gallery-control {
-	height: 100%;
-	background-color: rgba(0,0,0,1);
-	width: 4%;
-}
-
-#modal #prevImage {
-	float: left;
-}
-
-
-#modal #nextImage {
-	position: absolute;
-	right: 0px;
-}
-
-
 #modal #modal-image {
-	    top: 20%;
+	top: 20%;
     left: 25%;
-    position: fixed;
+    position: absolute;
+   	min-width: 45%;
     max-width: 50%;
-    max-height: 63%;
+    max-height: 70%;
 }
 
 #modal .close {
@@ -167,29 +152,19 @@ footer {
 	color: white;
 }
 
-/* Modal styles */
-/*#modal {
-	background-color: rgba(132, 130, 130, .9);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 3;
+.modal-container .prevImage, .modal-container .nextImage {
+  position: absolute;
+  top: 50%;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
 }
 
-#modal-image {
-	max-width: 70%;
-    max-height: 50%;
-    display: inline-block;
-    top: 25%;
-    left: 27%;
-    position: absolute;
+.modal-container .nextImage {
+  right: 0;
 }
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}*/
