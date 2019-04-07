@@ -1,8 +1,8 @@
 var headings = ["Space Invaders", "Hibisca", "Twenty-One", "Hangman"];
 var images = ["images/space_invaders.png", "images/hibisca_poster.jpg", "images/twenty-one.png", "images/hangman.png"];
 var dates = ["November 2018", "January - May 2017","January 2019", "January 2018"];
-var contents = ["A remake of the popular Space Invaders game from the 1970s",
-				"Take care of plants using Android sensors, notifications, and news and music APIs.",
+var contents = ["A remake of the popular Space Invaders game from the 1970s.",
+				"Take care of plants using Android sensors, notifications, and news and music APIs. Team project.",
 				"A web-based version of the card game, Twenty One. Play against three computer-players and see if you can win.",
 				"A web-based version of Hangman. Sound effects and music play in the background.",
 				"https://naomi-rc.github.io/hangman/"
