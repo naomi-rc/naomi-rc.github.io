@@ -21,6 +21,7 @@ import React from "react";
 
 // reactstrap components
 import { Container } from "reactstrap";
+import Typical from 'react-typical';
 
 // core components
 
@@ -30,52 +31,39 @@ function IndexHeader() {
       <div
         className="page-header section-dark"
         style={{
-          backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg").default + ")",
+          backgroundColor:"#19a5aa"
         }}
       >
-        <div className="filter" />
         <div className="content-center">
           <Container>
             <div className="title-brand">
-              <h1 className="presentation-title">Paper Kit React</h1>
-              <div className="fog-low">
-                <img
-                  alt="..."
-                  src={require("assets/img/fog-low.png").default}
+              <h1 className="presentation-title">
+              <Typical
+                loop={Infinity}
+                wrapper="b"
+                steps={[
+                  "DEVELOPER",
+                  1200,
+                  "VR ENTHUSIAST",
+                  1200,
+                  "LANGUAGE LEARNER",
+                  1200,
+                ]}
                 />
-              </div>
-              <div className="fog-low right">
-                <img
-                  alt="..."
-                  src={require("assets/img/fog-low.png").default}
-                />
-              </div>
+              </h1>
             </div>
-            <h2 className="presentation-subtitle text-center">
-              Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit!
+            <h2 className="presentation-subtitle text-center">              
+              
+        
             </h2>
           </Container>
-        </div>
-        <div
-          className="moving-clouds"
-          style={{
-            backgroundImage:
-              "url(" + require("assets/img/clouds.png").default + ")",
-          }}
-        />
-        <h6 className="category category-absolute">
-          Designed and coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=pkr-index-page"
-            target="_blank"
-          >
+        </div>        
+        <h6 className="category category-absolute">          
             <img
               alt="..."
               className="creative-tim-logo"
-              src={require("assets/img/creative-tim-white-slim2.png").default}
+              src={require("assets/img/mouse-arrow-down.gif").default}
             />
-          </a>
         </h6>
       </div>
     </>

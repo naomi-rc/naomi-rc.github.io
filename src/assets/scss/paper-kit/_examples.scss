@@ -173,16 +173,11 @@
 }
 
 .presentation-title{
-    font-size: 8em;
-    font-weight: 700;
+    font-size: 4em;
+    font-weight: 300;
     margin: 0;
     color: #FFFFFF;
     background: #fbf8ec;
-    background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
-    background: -webkit-linear-gradient(top, #FFFFFF 35%,#4e6773 100%);
-    background: -ms-linear-gradient(top, #FFFFFF 35%,#4e6773 100%);
-    background: linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -201,7 +196,7 @@
     color: rgba(255, 255, 255, 0.5);
 
     .creative-tim-logo {
-        max-width: 140px;
+        max-width: 40px;
         top: -2px;
         left: 3px;
         position: relative;
