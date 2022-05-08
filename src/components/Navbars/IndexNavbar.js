@@ -21,7 +21,6 @@ import React from "react";
 import classnames from "classnames";
 // reactstrap components
 import {
-  Button,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -29,6 +28,10 @@ import {
   NavLink,
   Nav,
   Container,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
 } from "reactstrap";
 
 function IndexNavbar() {
@@ -112,7 +115,8 @@ function IndexNavbar() {
                   <i className="fa fa-linkedin" />
                   <p className="d-lg-none">LinkedIn</p>
                 </NavLink>
-              </NavItem>            
+              </NavItem>   
+              
           </Nav>
         </Collapse>
       </Container>

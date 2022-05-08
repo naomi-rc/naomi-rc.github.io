@@ -23,7 +23,7 @@ import React from "react";
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import PortfolioFooter from "components/Footers/PortfolioFooter.js";
 
 // index sections
 import SectionWelcome from "views/index-sections/SectionWelcome.js";
@@ -41,6 +41,7 @@ import SectionDark from "views/index-sections/SectionDark.js";
 import SectionLogin from "views/index-sections/SectionLogin.js";
 import SectionExamples from "views/index-sections/SectionExamples.js";
 import SectionDownload from "views/index-sections/SectionDownload.js";
+import PROJECTS from "assets/projects.js";
 
 function Index() {
   document.documentElement.classList.remove("nav-open");
@@ -56,7 +57,7 @@ function Index() {
       <IndexHeader />
       <div className="main">
         <SectionWelcome />
-        <SectionProjects />
+        <SectionProjects projects={PROJECTS}/>
         <SectionButtons />        
         <SectionNavbars />
         <SectionNavigation />
@@ -70,7 +71,7 @@ function Index() {
         <SectionLogin />
         <SectionExamples />
         <SectionDownload />
-        <DemoFooter />
+        <PortfolioFooter />
       </div>
     </>
   );
