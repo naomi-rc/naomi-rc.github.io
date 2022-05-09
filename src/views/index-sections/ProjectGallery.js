@@ -19,13 +19,13 @@ function ProjectGallery(data) {
     const projects = data.projects;
     const onClick = data.onClick;
   return (
-    <Row xs={1} md={3} className="g-4">
+    <Row xs={1} md={3} className="">
     {projects.map((project, idx) => (
         <Col key={idx}>
         <Card >
-            <CardImg variant="top" src={project.imgSrc} style={{"height": "18vw","object-fit": "contain" }} />
+            <CardImg variant="top" src={project.imgSrc} style={{"height": "18vw","objectFit": "contain" }} />
             <CardBody>
-            <CardTitle>{project.name}</CardTitle>
+            <h5><CardTitle className="text-center title">{project.name}</CardTitle></h5>
             <CardText>
                 {project.description}
             </CardText>
