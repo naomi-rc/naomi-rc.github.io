@@ -6,7 +6,7 @@ import {
     CardBody, 
     CardImg,
     CardText,
-    CardTitle
+    CardTitle,
   } from "reactstrap";
 import 'assets/scss/flexbin.scss'
 
@@ -20,10 +20,13 @@ function ProjectGallery(data) {
         <Card >
             <CardImg variant="top" src={project.imgSrc} style={{"height": "18vw","objectFit": "contain" }} />
             <CardBody>
-            <h5><CardTitle className="text-center title">{project.name}</CardTitle></h5>
-            <CardText>
-                {project.description}
-            </CardText>
+                <h5><CardTitle className="text-center title">{project.name}</CardTitle></h5>
+                <CardText>
+                    {project.description}
+                </CardText>
+                {project.github && <a href={project.github} target="_blank" title="GitHub"><i className="fa fa-github spaced-icons pointer"></i></a>}
+                {project.demoUrl && <a href={project.demoUrl} target="_blank" title="Demo"><i className="fa fa-eye spaced-icons pointer"></i></a>}
+                {project.vidSrc && <a href={project.vidSrc} target="_blank" title="Video"><i className="fa fa-film spaced-icons pointer"></i></a>}
             </CardBody>
         </Card>
         </Col>
