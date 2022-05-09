@@ -26,6 +26,7 @@ function SectionProjects(data) {
   const gamedevprojects = projects.filter((project) => project.category === 'gamedev');
   const gamejamprojects = projects.filter((project) => project.category === 'gamejam');
   const vrprojects = projects.filter((project) => project.category === 'vr');
+  const artprojects = projects.filter((project) => project.category === 'art');
   const otherprojects = projects.filter((project) => project.category === 'other');
 
   const [activeTab, setActiveTab] = useState("1");
@@ -110,6 +111,16 @@ function SectionProjects(data) {
                           toggle("5");
                         }}
                       >
+                        Digital Art
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink
+                        className={activeTab === "6" ? "active pointer" : "pointer"}
+                        onClick={() => {
+                          toggle("6");
+                        }}
+                      >
                         Other
                       </NavLink>
                     </NavItem>
@@ -130,6 +141,9 @@ function SectionProjects(data) {
                   <ProjectGallery projects={vrprojects} onClick={openLightbox} />
                 </TabPane>
                 <TabPane tabId="5">
+                  <ProjectGallery projects={artprojects} onClick={openLightbox} />
+                </TabPane>
+                <TabPane tabId="6">
                   <ProjectGallery projects={otherprojects} onClick={openLightbox} />
                 </TabPane>
               </TabContent>

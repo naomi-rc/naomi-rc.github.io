@@ -128,6 +128,33 @@ const PROJECTS = [
         github: "https://github.com/naomi-rc/TicketBooth",
         category:"other"
     },
+    {
+        name: "Elf",
+        description: "",
+        imgSrc: require("assets/img/projects/elf.gif").default,
+        vidSrc : "",
+        demoUrl: "",
+        github: "",
+        category:"art"
+    },
+    {
+        name: "Penguin",
+        description: "",
+        imgSrc: require("assets/img/projects/penguin.gif").default,
+        vidSrc : "",
+        demoUrl: "",
+        github: "",
+        category:"art"
+    },
+    {
+        name: "Pixel Wumpus (Discord's mascot)",
+        description: "",
+        imgSrc: require("assets/img/projects/pixel_wumpus.gif").default,
+        vidSrc : "",
+        demoUrl: "",
+        github: "",
+        category:"art"
+    }
 ]
 
 export default PROJECTS;
