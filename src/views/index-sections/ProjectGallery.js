@@ -1,13 +1,8 @@
 import React from 'react'
 import {
     Card,
-    Container,
     Row,
     Col,
-    Carousel,
-    CarouselItem,
-    CarouselIndicators,
-    CarouselCaption,
     CardBody, 
     CardImg,
     CardText,
@@ -17,7 +12,7 @@ import 'assets/scss/flexbin.scss'
 
 function ProjectGallery(data) {
     const projects = data.projects;
-    const onClick = data.onClick;
+    //const onClick = data.onClick;
   return (
     <Row xs={1} md={3} className="">
     {projects.map((project, idx) => (
