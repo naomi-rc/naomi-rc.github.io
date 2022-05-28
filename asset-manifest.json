@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.f8048be2.chunk.css",
-    "main.js": "/static/js/main.3bbc9c2a.chunk.js",
-    "main.js.map": "/static/js/main.3bbc9c2a.chunk.js.map",
+    "main.js": "/static/js/main.485dbf04.chunk.js",
+    "main.js.map": "/static/js/main.485dbf04.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.91ef2c4d.js",
     "runtime-main.js.map": "/static/js/runtime-main.91ef2c4d.js.map",
     "static/css/2.7ab6f613.chunk.css": "/static/css/2.7ab6f613.chunk.css",
-    "static/js/2.447ea261.chunk.js": "/static/js/2.447ea261.chunk.js",
-    "static/js/2.447ea261.chunk.js.map": "/static/js/2.447ea261.chunk.js.map",
+    "static/js/2.ede2d57d.chunk.js": "/static/js/2.ede2d57d.chunk.js",
+    "static/js/2.ede2d57d.chunk.js.map": "/static/js/2.ede2d57d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7ab6f613.chunk.css.map": "/static/css/2.7ab6f613.chunk.css.map",
     "static/css/main.f8048be2.chunk.css.map": "/static/css/main.f8048be2.chunk.css.map",
-    "static/js/2.447ea261.chunk.js.LICENSE.txt": "/static/js/2.447ea261.chunk.js.LICENSE.txt",
-    "static/js/main.3bbc9c2a.chunk.js.LICENSE.txt": "/static/js/main.3bbc9c2a.chunk.js.LICENSE.txt",
+    "static/js/2.ede2d57d.chunk.js.LICENSE.txt": "/static/js/2.ede2d57d.chunk.js.LICENSE.txt",
+    "static/js/main.485dbf04.chunk.js.LICENSE.txt": "/static/js/main.485dbf04.chunk.js.LICENSE.txt",
     "static/media/ayo-ogunseinde-2.jpg": "/static/media/ayo-ogunseinde-2.f4af8f2c.jpg",
     "static/media/cartoon-character-quiz_demo_image.png": "/static/media/cartoon-character-quiz_demo_image.a7e42378.png",
     "static/media/clem-onojeghuo-2.jpg": "/static/media/clem-onojeghuo-2.d16702ce.jpg",
     "static/media/clem-onojeghuo-3.jpg": "/static/media/clem-onojeghuo-3.83003f44.jpg",
     "static/media/comingsoon_placeholder.png": "/static/media/comingsoon_placeholder.e33bde93.png",
     "static/media/daniel-olahh.jpg": "/static/media/daniel-olahh.77c0ffac.jpg",
+    "static/media/dashmania_demo_image.png": "/static/media/dashmania_demo_image.bd8a8d82.png",
     "static/media/elf.gif": "/static/media/elf.fed572a7.gif",
     "static/media/erik-lucatero-2.jpg": "/static/media/erik-lucatero-2.d09715ab.jpg",
     "static/media/fabio-mangione.jpg": "/static/media/fabio-mangione.488bc249.jpg",
@@ -39,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.91ef2c4d.js",
     "static/css/2.7ab6f613.chunk.css",
-    "static/js/2.447ea261.chunk.js",
+    "static/js/2.ede2d57d.chunk.js",
     "static/css/main.f8048be2.chunk.css",
-    "static/js/main.3bbc9c2a.chunk.js"
+    "static/js/main.485dbf04.chunk.js"
   ]
 }
