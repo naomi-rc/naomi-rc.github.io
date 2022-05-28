@@ -3,11 +3,10 @@
 }
 
 .spaced-icons {
-   float: left;
-   padding-right: 3rem;
-   font-size: 1.825em;
+    float: left;
+    padding-right: 3rem;
+    font-size: 1.825em;
     line-height: 1.4;
     margin: 20px 0 0px;
     display: block;
-
 }

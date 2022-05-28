@@ -12,7 +12,7 @@ import {
   TabPane
 } from "reactstrap";
 import ProjectGallery from './ProjectGallery';
-import 'assets/scss/custom.scss'
+import 'assets/css/custom.css'
 
 
 function SectionProjects(data) {
