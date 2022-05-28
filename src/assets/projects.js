@@ -77,7 +77,7 @@ const PROJECTS = [
     {
         name: "Dash Mania",
         description: "Basic Unity game from Brackeys tutorial submitted as an entry in Brackey's Game Jam 2021",
-        imgSrc: require("assets/img/projects/twenty-one_demo_image.png").default,
+        imgSrc: require("assets/img/projects/dashmania_demo_image.png").default,
         vidSrc : "",
         demoUrl: "https://naomi-rc.github.io/DashManiaDemo/",
         github: "https://github.com/naomi-rc/DashMania",
