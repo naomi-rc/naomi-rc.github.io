@@ -9,5 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Setup packages
+      run: npm install
+    - name: Predeploy
+      run: npm run predeploy
     - name: Deploy site
       run: npm run deploy
