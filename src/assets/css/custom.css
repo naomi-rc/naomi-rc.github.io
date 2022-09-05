@@ -10,3 +10,7 @@
     margin: 20px 0 0px;
     display: block;
 }
+
+.project-title {
+    font-weight: 500;
+}

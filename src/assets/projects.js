@@ -3,7 +3,7 @@
     name: "",
     description: "",
     link:"",
-    imgSrc: require("assets/img/projects/"",
+    imgSrc: require("assets/img/projects/comingsoon_placeholder.png").default,
     vidSrc : "",
         demoUrl: "",
         github: "",
@@ -13,20 +13,11 @@
 const PROJECTS = [   
     {
         name: "Cartoon Character Quiz",
-        description: "Part of a 2021 hackathon with Mintbean and StepZen using #GraphQL, The Cartoon Character Quiz is a game where you guess the cartoon character's name.",
+        description: "Part of a 2021 hackathon with Mintbean and StepZen using GraphQL, The Cartoon Character Quiz is a game where you guess the cartoon character's name.",
         imgSrc: require("assets/img/projects/cartoon-character-quiz_demo_image.png").default,
         vidSrc : "",
         demoUrl: "https://naomi-rc.github.io/CartoonCharacterQuiz/index.html",
         github: "https://github.com/naomi-rc/CartoonCharacterQuiz",
-        category:"web"
-    },
-    {
-        name: "Hangman",
-        description: "A simple web-based hangman game built as way to practice JavaScript. Guess the correct letters and don't let Mr. Stickman be hung!",
-        imgSrc: require("assets/img/projects/hangman_demo_image.png").default,
-        vidSrc : "",
-        demoUrl: "https://naomi-rc.github.io/hangman/",
-        github: "https://github.com/naomi-rc/hangman",
         category:"web"
     },
     {
@@ -48,12 +39,21 @@ const PROJECTS = [
         category:"web"
     },
     {
-        name: "FlippyKnife",
-        description: "Flippy Knife game done by following a Brackeys Unity tutorial. Flip the knife and get it to land on its tip.",
-        imgSrc: require("assets/img/projects/flippyknife_demo_image.png").default,
-        vidSrc : "https://www.youtube.com/watch?v=GSuDdkf_yiw",
-        demoUrl: "",
-        github: "https://github.com/naomi-rc/FlippyKnife",
+        name: "Hangman",
+        description: "A simple web-based hangman game built as way to practice JavaScript. Guess the correct letters and don't let Mr. Stickman be hung!",
+        imgSrc: require("assets/img/projects/hangman_demo_image.png").default,
+        vidSrc : "",
+        demoUrl: "https://naomi-rc.github.io/hangman/",
+        github: "https://github.com/naomi-rc/hangman",
+        category:"web"
+    },    
+    {
+        name: "Don't Freeze",
+        description: "Game made with as part of game development course at ÉTS. Don't Freeze is an action-survival game that takes place in a frozen and snowy apocalyptic world. You must find a way to endure and progress through each level by defending against enemies and finding equipment to improve your chances of survival.",
+        imgSrc: require("assets/img/projects/dontfreeze_demo_image.png").default,
+        vidSrc : "https://youtu.be/VOINw_LFlYc",
+        demoUrl: "https://subzero-studios.itch.io/dont-freeze",
+        github: "",
         category:"gamedev"
     },
     {
@@ -66,8 +66,17 @@ const PROJECTS = [
         category:"gamedev"
     },
     {
+        name: "FlippyKnife",
+        description: "Flippy Knife game done by following a Brackeys Unity tutorial. Flip the knife and get it to land on its tip.",
+        imgSrc: require("assets/img/projects/flippyknife_demo_image.png").default,
+        vidSrc : "https://www.youtube.com/watch?v=GSuDdkf_yiw",
+        demoUrl: "",
+        github: "https://github.com/naomi-rc/FlippyKnife",
+        category:"gamedev"
+    },
+    {
         name: "When Pigs Fly",
-        description: "A remake of Funbrain's When Pigs Fly game made with Unity. Bouce on clouds all the way to the top while eating your fruits and vegetables.",
+        description: "A remake of Funbrain's When Pigs Fly game made with Unity. Bounce on clouds all the way to the top while eating your fruits and vegetables.",
         imgSrc: require("assets/img/projects/comingsoon_placeholder.png").default,
         vidSrc : "",
         demoUrl: "",
@@ -75,12 +84,12 @@ const PROJECTS = [
         category:"gamedev"
     },
     {
-        name: "Dash Mania",
-        description: "Basic Unity game from Brackeys tutorial submitted as an entry in Brackey's Game Jam 2021",
-        imgSrc: require("assets/img/projects/dashmania_demo_image.png").default,
+        name: "Alone Together",
+        description: "Game submitted for Brackey's Game Jam Fall 2022. The theme was 'You're not alone'. Help Tantan the alien find his spaceship pieces so he's not all alone! | Multiplayer platformer",
+        imgSrc: require("assets/img/projects/alonetogether_demo_image.png").default,
         vidSrc : "",
-        demoUrl: "https://naomi-rc.github.io/DashManiaDemo/",
-        github: "https://github.com/naomi-rc/DashMania",
+        demoUrl: "https://myiahcat.itch.io/alone-together",
+        github: "",
         category:"gamejam"
     },
     {
@@ -93,6 +102,33 @@ const PROJECTS = [
         category:"gamejam"
     },
     {
+        name: "Dash Mania",
+        description: "Basic Unity game from Brackeys tutorial submitted as an entry in Brackey's Game Jam 2021",
+        imgSrc: require("assets/img/projects/dashmania_demo_image.png").default,
+        vidSrc : "",
+        demoUrl: "https://naomi-rc.github.io/DashManiaDemo/",
+        github: "https://github.com/naomi-rc/DashMania",
+        category:"gamejam"
+    },
+    {
+        name: "Verse Invaders",
+        description: "Game made with Conjure ÉTS for the Creative jam 20, May 2022. Invaders are attacking the multiverse! They want to destroy the world and are attacking three universes at the same time. Defend them and use the the invaders' scraps to upgrade your cannon. ",
+        imgSrc: require("assets/img/projects/verseinvaders_demo_image.png").default,
+        vidSrc : "",
+        demoUrl: "https://conjure.itch.io/verse-invaders",
+        github: "",
+        category:"gamejam"
+    },
+    {
+        name: "VRt Gallery",
+        description: "An art gallery that can be explored in VR. All of the art seen in the demo video was made by Myiah Catwell, Elizabeth Catwell and Naomi Catwell.",
+        imgSrc: require("assets/img/projects/vrtgallery_demo_image.png").default,
+        vidSrc : "https://youtu.be/G32oqbJjtHA",
+        demoUrl: "",
+        github: "",
+        category:"vr"
+    },
+    {
         name: "XR Explorations Project",
         description: "A first dive into VR with the Oculus Quest and Unity. The basic scene includes an XR rig, a table and three colored blocks with which to interact. Movement in teleportation-based.",
         imgSrc: require("assets/img/projects/comingsoon_placeholder.png").default,
@@ -100,15 +136,42 @@ const PROJECTS = [
         demoUrl: "",
         github: "https://github.com/naomi-rc/XR-Explorations-Project",
         category:"vr"
-    },
+    },    
     {
-        name: "VRt Gallery",
-        description: "An art gallery that can be explored in VR. All of the art seen in the demo video was made by Myiah Catwell, Elizabeth Catwell and Naomi Catwell.",
-        imgSrc: require("assets/img/projects/comingsoon_placeholder.png").default,
-        vidSrc : "https://youtu.be/G32oqbJjtHA",
+        name: "Fluid Particle Simulation",
+        description: "A fluid simulation implemented in C++ based on the methods proposed in « Position Based Fluids » (2013), Macklin and Mueller.",
+        imgSrc: require("assets/img/projects/fluidsim_demo_image.gif").default,
+        vidSrc : "https://youtu.be/URoKkgDm3kw",
         demoUrl: "",
         github: "",
-        category:"vr"
+        category:"other"
+    },
+    {
+        name: "3D Cloth Particle Simulation",
+        description: "Cloth simulation is one of the most frequent types of simulation in video game. It's often used for adding realism to character movement. This cloth simulation implements three numerical integration techniques in C++: Explcit Euler, Midpoint, Semi-Implicit Euler and Implicit Euler.",
+        imgSrc: require("assets/img/projects/clothsimulation3d_demo_image.gif").default,
+        vidSrc : "https://youtu.be/25KfnlsudeQ",
+        demoUrl: "",
+        github: "",
+        category:"other"
+    },
+    {
+        name: "Blender Humanoid Rigging",
+        description: "A rigging and animation tutorial project done in Blender. The rigging in this demo was done from scratch. Rigging and animation for quadrupeds used in the game development project Don't Freeze was done using Rigify and Rigify Animbox.",
+        imgSrc: require("assets/img/projects/humanoidrigging_demo_image.png").default,
+        vidSrc : "https://youtu.be/FKCZfw2ZnUw",
+        demoUrl: "",
+        github: "",
+        category:"other"
+    },
+    {
+        name: "A* AI Agent Unity Demo",
+        description: "This Unity project uses the A* algorithm AI steering to find the shortest path and navigate an agent to the target destination.",
+        imgSrc: require("assets/img/projects/astarsimulation_demo_image.gif").default,
+        vidSrc : "https://www.youtube.com/watch?v=l8tTwz22en0&ab_channel=KonvenienzApps",
+        demoUrl: "",
+        github: "",
+        category:"other"
     },
     {
         name: "Python Face Detection",

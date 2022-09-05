@@ -71,7 +71,7 @@ function SectionProjects(data) {
                           toggle("1");
                         }}
                       >
-                        Web
+                        <h4><strong>Web</strong></h4>
                       </NavLink>
                     </NavItem>
                     <NavItem>
@@ -81,7 +81,7 @@ function SectionProjects(data) {
                           toggle("2");
                         }}
                       >
-                        Game Development
+                        <h4><strong>Game Development</strong></h4>
                       </NavLink>
                     </NavItem>
                     <NavItem>
@@ -91,7 +91,7 @@ function SectionProjects(data) {
                           toggle("3");
                         }}
                       >
-                        Game Jams
+                        <h4><strong>Game Jams</strong></h4>
                       </NavLink>
                     </NavItem>
                     <NavItem>
@@ -101,7 +101,7 @@ function SectionProjects(data) {
                           toggle("4");
                         }}
                       >
-                        VR
+                        <h4><strong>VR</strong></h4>
                       </NavLink>
                     </NavItem>
                     <NavItem>
@@ -111,7 +111,7 @@ function SectionProjects(data) {
                           toggle("5");
                         }}
                       >
-                        Digital Art
+                        <h4><strong>Digital Art</strong></h4>
                       </NavLink>
                     </NavItem>
                     <NavItem>
@@ -121,7 +121,7 @@ function SectionProjects(data) {
                           toggle("6");
                         }}
                       >
-                        Other
+                        <h4><strong>Other</strong></h4>
                       </NavLink>
                     </NavItem>
                   </Nav>

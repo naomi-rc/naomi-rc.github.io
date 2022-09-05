@@ -20,7 +20,7 @@ function ProjectGallery(data) {
         <Card >
             <CardImg variant="top" src={project.imgSrc} style={{"height": "18vw","objectFit": "contain" }} />
             <CardBody>
-                <h5><CardTitle className="text-center title">{project.name}</CardTitle></h5>
+                <h5><CardTitle className="text-center title project-title">{project.name}</CardTitle></h5>
                 <CardText>
                     {project.description}
                 </CardText>
