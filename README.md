@@ -15,3 +15,8 @@ npm start
 ```
 
 The site is deployed to `localhost:3000` by default.
+
+Run the following to deploy
+```
+npm run deploy
+```
