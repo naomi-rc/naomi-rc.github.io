@@ -120,14 +120,14 @@ function IndexNavbar() {
                         className="dropdown-info"
                       >
                         <DropdownItem
-                          href="/fr/presentation"
-                          onClick={(e) => changeLocale("FR")}
+                          href="/presentation"
+                          onClick={(e) => changeLocale("fr")}
                         >
                           Français
                         </DropdownItem>
                         <DropdownItem
-                          href="/en/presentation"
-                          onClick={(e) => changeLocale("EN")}
+                          href="/presentation"
+                          onClick={(e) => changeLocale("en")}
                         >
                           English
                         </DropdownItem>

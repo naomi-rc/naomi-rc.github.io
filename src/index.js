@@ -29,20 +29,14 @@ import Index from "views/Index.js";
 import ProfilePage from "views/presentation-sections/ProfilePage.js";
 // others
 
-import en from 'intl/en.json'
-import fr from 'intl/fr.json'
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index" 
         render={(props) => <Index {...props} />} />
       <Route
-        path="/en/presentation"
-        render={(props) => <ProfilePage locale={en} {...props}/>}
-      />
-      <Route
-        path="/fr/presentation"
-        render={(props) => <ProfilePage locale={fr} {...props} />}
+        path="/presentation"
+        render={(props) => <ProfilePage {...props}/>}
       />
       {
       /*<Route

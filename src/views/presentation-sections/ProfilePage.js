@@ -18,6 +18,9 @@
 */
 import React from "react";
 
+import en from 'intl/en.json'
+import fr from 'intl/fr.json'
+
 // reactstrap components
 import {
   Container,
@@ -30,14 +33,8 @@ import PresentationNavbar from "components/Navbars/PresentationNavbar.js";
 import PresentationHeader from "components/Headers/PresentationHeader.js";
 import PortfolioFooterLight from "components/Footers/PortfolioFooterLight.js";
 
-function ProfilePage(props) {
-  const [activeTab, setActiveTab] = React.useState("1");
-
-  const toggle = (tab) => {
-    if (activeTab !== tab) {
-      setActiveTab(tab);
-    }
-  };
+function ProfilePage() {
+  const defaultLocale = localStorage['locale'] ? localStorage['locale'] : 'en';
 
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -73,15 +70,16 @@ function ProfilePage(props) {
           </div>
           <Row>
             <Col className="ml-auto mr-auto text-center project-title" md="10">
+              {console.log("Locale: " + defaultLocale)}
                 <h3 className="presentation-blurb">
-                {props.locale.presentation_title}
+                {defaultLocale == 'en'? en.presentation_title : fr.presentation_title}
                 </h3>
                 <br/>
                 <h5 className="presentation-blurb">
-                  {props.locale.presentation_blurb}
+                  {defaultLocale == 'en'? en.presentation_blurb : fr.presentation_blurb}
                 </h5>
                 <br/>
-                <h5 className="presentation-blurb">{props.locale.presentation_call_to_action}</h5>
+                <h5 className="presentation-blurb">{defaultLocale == 'en'? en.presentation_call_to_action : fr.presentation_call_to_action}</h5>
               
               <br/>
               <img
