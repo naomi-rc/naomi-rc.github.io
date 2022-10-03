@@ -26,17 +26,26 @@ import "assets/scss/paper-kit.scss?v=1.3.0";
 import "assets/demo/demo.css?v=1.3.0";
 // pages
 import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
+import ProfilePage from "views/presentation-sections/ProfilePage.js";
 // others
 
+import en from 'intl/en.json'
+import fr from 'intl/fr.json'
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
+      <Route path="/index" 
+        render={(props) => <Index {...props} />} />
       <Route
+        path="/en/presentation"
+        render={(props) => <ProfilePage locale={en} {...props}/>}
+      />
+      <Route
+        path="/fr/presentation"
+        render={(props) => <ProfilePage locale={fr} {...props} />}
+      />
+      {
+      /*<Route
         path="/nucleo-icons"
         render={(props) => <NucleoIcons {...props} />}
       />
@@ -52,6 +61,7 @@ ReactDOM.render(
         path="/register-page"
         render={(props) => <RegisterPage {...props} />}
       />
+    */}
       <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,

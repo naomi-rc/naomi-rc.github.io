@@ -4624,7 +4624,7 @@ License - nucleoapp.com/license/
 
 .owner .avatar {
   padding: 15px;
-  max-width: 180px;
+  max-width: 300px; /*originally 180px*/
   margin: -85px auto 0;
   display: inline-block; }
 

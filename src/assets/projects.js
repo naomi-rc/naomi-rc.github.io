@@ -148,7 +148,7 @@ const PROJECTS = [
     },
     {
         name: "3D Cloth Particle Simulation",
-        description: "Cloth simulation is one of the most frequent types of simulation in video game. It's often used for adding realism to character movement. This cloth simulation implements three numerical integration techniques in C++: Explcit Euler, Midpoint, Semi-Implicit Euler and Implicit Euler.",
+        description: "Cloth simulation is one of the most frequent types of simulation in video game. It's often used for adding realism to character movement. This cloth simulation implements four numerical integration techniques in C++: Explcit Euler, Midpoint, Semi-Implicit Euler and Implicit Euler.",
         imgSrc: require("assets/img/projects/clothsimulation3d_demo_image.gif").default,
         vidSrc : "https://youtu.be/25KfnlsudeQ",
         demoUrl: "",
