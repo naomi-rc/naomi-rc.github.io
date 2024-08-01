@@ -75,22 +75,13 @@ const PROJECTS = [
         category:"gamedev"
     },
     {
-        name: "When Pigs Fly",
-        description: "A remake of Funbrain's When Pigs Fly game made with Unity. Bounce on clouds all the way to the top while eating your fruits and vegetables.",
-        imgSrc: require("assets/img/projects/comingsoon_placeholder.png").default,
-        vidSrc : "",
-        demoUrl: "",
-        github: "https://github.com/naomi-rc/When-Pigs-Fly",
-        category:"gamedev"
-    },
-    {
         name: "Alone Together",
         description: "Game submitted for Brackey's Game Jam Fall 2022. The theme was 'You're not alone'. Help Tantan the alien find his spaceship pieces so he's not all alone! | Multiplayer platformer",
         imgSrc: require("assets/img/projects/alonetogether_demo_image.png").default,
         vidSrc : "",
         demoUrl: "https://myiahcat.itch.io/alone-together",
         github: "",
-        category:"gamejam"
+        category:"gamedev"
     },
     {
         name: "Spooky Tropics Resort",
@@ -99,7 +90,7 @@ const PROJECTS = [
         vidSrc : "",
         demoUrl: "https://mistalounge.itch.io/spooky-tropics-resort",
         github: "",
-        category:"gamejam"
+        category:"gamedev"
     },
     {
         name: "Dash Mania",
@@ -108,7 +99,7 @@ const PROJECTS = [
         vidSrc : "",
         demoUrl: "https://naomi-rc.github.io/DashManiaDemo/",
         github: "https://github.com/naomi-rc/DashMania",
-        category:"gamejam"
+        category:"gamedev"
     },
     {
         name: "Verse Invaders",
@@ -117,7 +108,7 @@ const PROJECTS = [
         vidSrc : "",
         demoUrl: "https://conjure.itch.io/verse-invaders",
         github: "",
-        category:"gamejam"
+        category:"gamedev"
     },
     {
         name: "VRt Gallery",
@@ -126,7 +117,7 @@ const PROJECTS = [
         vidSrc : "https://youtu.be/G32oqbJjtHA",
         demoUrl: "",
         github: "",
-        category:"vr"
+        category:"xr"
     },
     {
         name: "XR Explorations Project",
@@ -135,7 +126,7 @@ const PROJECTS = [
         vidSrc : "",
         demoUrl: "",
         github: "https://github.com/naomi-rc/XR-Explorations-Project",
-        category:"vr"
+        category:"xr"
     },    
     {
         name: "Fluid Particle Simulation",
@@ -144,7 +135,7 @@ const PROJECTS = [
         vidSrc : "https://youtu.be/URoKkgDm3kw",
         demoUrl: "",
         github: "",
-        category:"other"
+        category:"misc"
     },
     {
         name: "3D Cloth Particle Simulation",
@@ -153,7 +144,7 @@ const PROJECTS = [
         vidSrc : "https://youtu.be/25KfnlsudeQ",
         demoUrl: "",
         github: "",
-        category:"other"
+        category:"misc"
     },
     {
         name: "Blender Humanoid Rigging",
@@ -162,7 +153,7 @@ const PROJECTS = [
         vidSrc : "https://youtu.be/FKCZfw2ZnUw",
         demoUrl: "",
         github: "",
-        category:"other"
+        category:"misc"
     },
     {
         name: "A* AI Agent Unity Demo",
@@ -171,7 +162,7 @@ const PROJECTS = [
         vidSrc : "https://www.youtube.com/watch?v=l8tTwz22en0&ab_channel=KonvenienzApps",
         demoUrl: "",
         github: "",
-        category:"other"
+        category:"misc"
     },
     {
         name: "Python Face Detection",
@@ -180,7 +171,7 @@ const PROJECTS = [
         vidSrc : "",
         demoUrl: "",
         github: "https://github.com/naomi-rc/PythonFaceDetection",
-        category:"other"
+        category:"misc"
     },
     {
         name: "Ticket Booth",
@@ -189,35 +180,8 @@ const PROJECTS = [
         vidSrc : "",
         demoUrl: "",
         github: "https://github.com/naomi-rc/TicketBooth",
-        category:"other"
-    },
-    {
-        name: "Elf",
-        description: "",
-        imgSrc: require("assets/img/projects/elf.gif").default,
-        vidSrc : "",
-        demoUrl: "",
-        github: "",
-        category:"art"
-    },
-    {
-        name: "Penguin",
-        description: "",
-        imgSrc: require("assets/img/projects/penguin.gif").default,
-        vidSrc : "",
-        demoUrl: "",
-        github: "",
-        category:"art"
-    },
-    {
-        name: "Pixel Wumpus (Discord's mascot)",
-        description: "",
-        imgSrc: require("assets/img/projects/pixel_wumpus.gif").default,
-        vidSrc : "",
-        demoUrl: "",
-        github: "",
-        category:"art"
-    }
+        category:"misc"
+    }   
 ]
 
 export default PROJECTS;
