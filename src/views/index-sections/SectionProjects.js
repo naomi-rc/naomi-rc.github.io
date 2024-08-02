@@ -14,6 +14,7 @@ import {
 import ProjectGallery from './ProjectGallery';
 import ProjectNavItem from './SectionProjectsNavItem';
 import 'assets/css/custom.css'
+import PROJECTS from "assets/projects.js";
 
 
 function SectionProjects(data) {
@@ -22,7 +23,7 @@ function SectionProjects(data) {
   const [currentProject, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)
 
-  const projects = data.projects;
+  const projects = PROJECTS;
   
   const xrprojects = projects.filter((project) => project.category === 'xr');
   const gamedevprojects = projects.filter((project) => project.category === 'gamedev');
