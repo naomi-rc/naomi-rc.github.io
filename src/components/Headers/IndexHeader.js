@@ -23,11 +23,11 @@ function IndexHeader() {
                 loop={Infinity}
                 wrapper="b"
                 steps={[
-                  "DEVELOPER",
+                  "XR DEVELOPMENT",
                   1200,
-                  "VR ENTHUSIAST",
+                  "SOFTWARE ENGINEERING",
                   1200,
-                  "LANGUAGE LEARNER",
+                  "LANGUAGE LEARNING",
                   1200,
                 ]}
                 />

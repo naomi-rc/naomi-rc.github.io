@@ -12,7 +12,9 @@ import {
   TabPane
 } from "reactstrap";
 import ProjectGallery from './ProjectGallery';
+import ProjectNavItem from './SectionProjectsNavItem';
 import 'assets/css/custom.css'
+import PROJECTS from "assets/projects.js";
 
 
 function SectionProjects(data) {
@@ -21,13 +23,13 @@ function SectionProjects(data) {
   const [currentProject, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)
 
-  const projects = data.projects;
-  const webprojects = projects.filter((project) => project.category === 'web');
+  const projects = PROJECTS;
+  
+  const xrprojects = projects.filter((project) => project.category === 'xr');
   const gamedevprojects = projects.filter((project) => project.category === 'gamedev');
-  const gamejamprojects = projects.filter((project) => project.category === 'gamejam');
-  const vrprojects = projects.filter((project) => project.category === 'vr');
-  const artprojects = projects.filter((project) => project.category === 'art');
-  const otherprojects = projects.filter((project) => project.category === 'other');
+  const hapticsprojects = projects.filter((project) => project.category === 'haptics');
+  const webprojects = projects.filter((project) => project.category === 'web');
+  const miscprojects = projects.filter((project) => project.category === 'misc');
 
   const [activeTab, setActiveTab] = useState("1");
   const toggle = (tab) => {
@@ -56,7 +58,7 @@ function SectionProjects(data) {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">MY PROJECTS</h2> 
+                <h2 className="title">PROJECTS</h2> 
               </Col>
             </Row>
             <Row>
@@ -64,87 +66,29 @@ function SectionProjects(data) {
               <div className="nav-tabs-navigation">
                 <div className="nav-tabs-wrapper">
                   <Nav id="tabs" role="tablist" tabs>
-                    <NavItem>
-                      <NavLink
-                        className={activeTab === "1" ? "active pointer" : "pointer"}
-                        onClick={() => {
-                          toggle("1");
-                        }}
-                      >
-                        <h4><strong>Web</strong></h4>
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={activeTab === "2" ? "active pointer" : "pointer"}
-                        onClick={() => {
-                          toggle("2");
-                        }}
-                      >
-                        <h4><strong>Game Development</strong></h4>
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={activeTab === "3" ? "active pointer" : "pointer"}
-                        onClick={() => {
-                          toggle("3");
-                        }}
-                      >
-                        <h4><strong>Game Jams</strong></h4>
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={activeTab === "4" ? "active pointer" : "pointer"}
-                        onClick={() => {
-                          toggle("4");
-                        }}
-                      >
-                        <h4><strong>VR</strong></h4>
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={activeTab === "5" ? "active pointer" : "pointer"}
-                        onClick={() => {
-                          toggle("5");
-                        }}
-                      >
-                        <h4><strong>Digital Art</strong></h4>
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={activeTab === "6" ? "active pointer" : "pointer"}
-                        onClick={() => {
-                          toggle("6");
-                        }}
-                      >
-                        <h4><strong>Other</strong></h4>
-                      </NavLink>
-                    </NavItem>
+                    <ProjectNavItem index="1" category="AR/VR" activeTab={activeTab} toggle={toggle}/>
+                    <ProjectNavItem index="2" category="Game Development" activeTab={activeTab} toggle={toggle}/>
+                    <ProjectNavItem index="3" category="Haptics" activeTab={activeTab} toggle={toggle}/>
+                    <ProjectNavItem index="4" category="Web" activeTab={activeTab} toggle={toggle}/>
+                    <ProjectNavItem index="5" category="Miscellanous" activeTab={activeTab} toggle={toggle}/>
                   </Nav>
                 </div>
               </div>
               <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">
-                  <ProjectGallery projects={webprojects} onClick={openLightbox} />
+                  <ProjectGallery projects={xrprojects} onClick={openLightbox} />
                 </TabPane>
                 <TabPane tabId="2">
                   <ProjectGallery projects={gamedevprojects} onClick={openLightbox} />
                 </TabPane>
                 <TabPane tabId="3">
-                  <ProjectGallery projects={gamejamprojects} onClick={openLightbox} />
+                  <ProjectGallery projects={hapticsprojects} onClick={openLightbox} />
                 </TabPane>
                 <TabPane tabId="4">
-                  <ProjectGallery projects={vrprojects} onClick={openLightbox} />
+                  <ProjectGallery projects={webprojects} onClick={openLightbox} />
                 </TabPane>
                 <TabPane tabId="5">
-                  <ProjectGallery projects={artprojects} onClick={openLightbox} />
-                </TabPane>
-                <TabPane tabId="6">
-                  <ProjectGallery projects={otherprojects} onClick={openLightbox} />
+                  <ProjectGallery projects={miscprojects} onClick={openLightbox} />
                 </TabPane>
               </TabContent>
             </Col>
