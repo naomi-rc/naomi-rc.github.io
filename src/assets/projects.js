@@ -12,7 +12,7 @@
 const PROJECTS = [   
     {
         name: "Mission Control",
-        description: "Mission Control offers an immersive VR simulation of a rocket landing to prepare children for the MRI process, aiming to reduce the need for sedation and enhance image quality. This project won first place as part of the McGillXR NeuroVR Hackathon 2024 edition, was demoed at the Shriner's Children's Hospital Virtual Reality workshop and was accepted to the Oculus Start Program.",
+        description: "Mission Control offers an immersive VR simulation of a rocket landing to prepare children for the MRI process, aiming to reduce the need for sedation and enhance image quality. This project won first place as part of the McGillXR NeuroVR Hackathon 2024 edition, was demoed at the Shriners Hospital for Children's Virtual Reality workshop and was accepted to the Oculus Start Program.",
         imgSrc: require("assets/img/projects/missioncontrol_demo_image.jpg").default,
         vidSrc : "https://youtu.be/_zNck3VJPx8",
         demoUrl: "",
@@ -21,7 +21,7 @@ const PROJECTS = [
     },
     {
         name: "VR Carnaval",
-        description: "Explore an immersive world full of arcade and carnival-type games in virtual reality. There is something for everyone - ball toss, Whack-A-Mole, darts, and more! A project built with the Conjure ÉTS virtual reality team.",
+        description: "Explore an immersive world full of arcade and carnival-type games in virtual reality. There is something for everyone - ball toss, Whack-A-Mole, darts, and more! This project was built with the Conjure ÉTS virtual reality team.",
         imgSrc: require("assets/img/projects/vrcarnaval_demo_image.png").default,
         vidSrc : "https://youtu.be/36nkIa9jOaA",
         demoUrl: "https://devcat-apps.itch.io/vrcade",
@@ -30,7 +30,7 @@ const PROJECTS = [
     },
     {
         name: "VR Carnaval Haptic Glove Integration",
-        description: "A haptic glove prototype based on LucasVR's haptic gloves so you can feel what you pick up and touch in virtual reality using ungrounded force feedback. The prototype is built using an ESP32 and works through SteamVR. Built with the Conjure ÉTS virtual reality team",
+        description: "A haptic glove prototype based on LucasVR's haptic gloves so you can feel what you pick up and touch in virtual reality using ungrounded force feedback. The prototype is built using an ESP32 and works through SteamVR. This project was built with the Conjure ÉTS virtual reality team",
         imgSrc: require("assets/img/projects/hapticgloves_demo_image.jpg").default,
         vidSrc : "",
         demoUrl: "",
@@ -39,7 +39,7 @@ const PROJECTS = [
     },
     {
         name: "Pedicle Screw Placement Simulator",
-        description: "Pedicle screw placement is an interventional procedure that can be used for scoliosis treatment, but it also requires a lot of training. This end-of-term team project is a two-part cooperative system for training procedure using augmented reality, Slicer3D and an Aruco marker computer vision tracking system.",
+        description: "Pedicle screw placement is an interventional procedure that can be used for scoliosis treatment, but it also requires a lot of training. This end-of-term team project is a two-part cooperative system for the training procedure using augmented reality, 3D Slicer and an Aruco marker computer vision tracking system.",
         imgSrc: require("assets/img/projects/pediclescrew_demo_image.jpg").default,
         vidSrc : "",
         demoUrl: "",
@@ -48,7 +48,7 @@ const PROJECTS = [
     },
     {
         name: "Sky Garden",
-        description: "Sky Garden is an immersive experience of a tranquil, interactive musical garden for mental health and well-being. An end-of-term team project for Advanced User Interfaces course.",
+        description: "Sky Garden is an immersive virtual reality experience of a tranquil, interactive musical garden for mental health and well-being. This was an end-of-term team project for a course on advanced user interfaces.",
         imgSrc: require("assets/img/projects/skygarden_demo_image.png").default,
         vidSrc : "https://youtu.be/6UrgteYHKFo",
         demoUrl: "",
@@ -57,7 +57,7 @@ const PROJECTS = [
     },    
     {
         name: "Haptic Needle Insertion Prototype",
-        description: "My end-of-studies project focused on building a haptic model for a needle insertion simulation using Unity and Haply Robotic's Inverse3 haptic robot. My implementation included a custom collision detection system and force models based off of Alamilla et al. (2022) and Yonghang Tai et al. (2016).",
+        description: "My end-of-studies project focused on building a haptic model for a needle insertion simulation prototype to train medical practitioners. The prototype was built using Unity and Haply Robotic's Inverse3 haptic robot. My implementation included a custom real-time collision detection system and force models based on Alamilla et al. (2022) and Yonghang Tai et al. (2016).",
         imgSrc: require("assets/img/projects/needleproto_demo_image.gif").default,
         vidSrc : "",
         demoUrl: "",
