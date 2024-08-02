@@ -153,16 +153,7 @@ const PROJECTS = [
         demoUrl: "",
         github: "",
         category:"xr"
-    },
-    {
-        name: "XR Explorations Project",
-        description: "A first dive into VR with the Oculus Quest and Unity. The basic scene includes an XR rig, a table and three colored blocks with which to interact. Movement in teleportation-based.",
-        imgSrc: require("assets/img/projects/comingsoon_placeholder.png").default,
-        vidSrc : "",
-        demoUrl: "",
-        github: "https://github.com/naomi-rc/XR-Explorations-Project",
-        category:"xr"
-    },    
+    },   
     {
         name: "Fluid Particle Simulation",
         description: "A fluid simulation implemented in C++ based on the methods proposed in « Position Based Fluids » (2013), Macklin and Mueller.",
